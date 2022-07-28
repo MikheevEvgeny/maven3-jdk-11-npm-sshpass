@@ -6,3 +6,4 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y sshpass nodejs build-essential
 RUN apt-get clean all
+RUN rm -rf /var/lib/apt/lists/*
